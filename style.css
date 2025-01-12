@@ -96,10 +96,12 @@ header {
 }
 
 .hamburger-menu {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+  z-index: 1001;
 }
 
 .hamburger-menu span {
