@@ -114,14 +114,17 @@ header {
 
 .side-menu {
   position: fixed;
-  top: 0;
-  right: -100%;
-  width: 250px;
-  height: 100vh;
+  top: 5%;
+  right: -300px;
+  width: 150px;
+  height: 200px;
   background-color: rgb(29, 19, 22);
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  padding-top: 60px;
+  z-index: 1000;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: right 0.3s ease;
+  
 }
 
 .side-menu ul {
@@ -132,11 +135,13 @@ header {
 
 .side-menu ul li {
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .side-menu ul li a {
   color: white;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 0.8em;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
