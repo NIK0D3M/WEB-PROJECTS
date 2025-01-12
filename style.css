@@ -1,13 +1,15 @@
+/* Resetowanie stylów */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Nagłówek */
 header {
-  display: flex;
-  justify-content: space-between;
+  display: flex; 
   align-items: center;
+  justify-content: center;
   background-color: rgb(29, 19, 22);
   color: black;
   position: sticky;
@@ -15,49 +17,76 @@ header {
   z-index: 1000;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: auto;
-  padding: 0 20px; 
-
+  height: 40px;
+  padding: 0 20px;
 }
 
+/* Logo */
 .logo {
   font-size: 1em;
   font-weight: bold;
   color: rgb(232, 223, 223);
   margin-left: auto;
+}
+
+/* Przyciski */
+
+.nav-btn {
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 70px;
+  padding: 5px 10px;
+  font-size: 0.7em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  gap: 20px;
+  height: auto;
+  font: sans-serif;
+}
+
+.nav.btn:hover {
+  background-color: #ff6700;
+}
+
+/* Kontener lewego przycisku */
+.left-button {
+  margin-right: auto;
   
 }
 
-/* Kontener nawigacji */
+/* Kontener prawego przycisku */
+.right-button {
+  margin-left: auto;
+}
 
+/* Kontener nawigacji */
 .main-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
+  width: auto;
+  
 }
 
 /* Lista nawigacyjna */
-
 .main-nav ul {
   list-style: none;
   display: flex;
   gap: 15px;
   margin: 0;
   padding: 5px;
-
-   
 }
 
-.main-nav ul li {
-  display: inline-block;
-}
+
+
 
 .main-nav ul li a {
   text-decoration: none;
-  color : black;
+  color: rgb(232, 223, 223);
   font-size: 0.7em;
   font-weight: 500;
-  color: rgb(232, 223, 223);
 }
 
