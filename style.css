@@ -144,21 +144,36 @@ header {
 
 .side-menu ul li {
   text-align: center;
-  margin: 15px 0;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
 }
 
 .side-menu ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 600;
   background: rgba(0, 0, 0, 0.2);
   padding: 5px 20px;
   border-radius: 15px;
   transition: background 0.3s ease, transform 0.3s ease;
+  gap: 10px; 
 }
 
 .side-menu ul li a:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: scale(1.05);
+}
+
+.side-menu ul li a i {
+  font-size: 1.5em;
+  color: #ffa85c;
+  transition: color 0.3s ease;
+}
+
+.side-menu ul li a:hover i {
+  color: #fff;
 }
