@@ -95,3 +95,46 @@ header {
   font-weight: 500;
 }
 
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity, 0.3s ease;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(29, 19, 22);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  padding-top: 60px;
+  transition: right 0.3s ease;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu ul li {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.side-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
