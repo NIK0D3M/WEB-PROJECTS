@@ -263,9 +263,22 @@ header {
 
 .section-title {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 30px;
+  font-weight: bold;
+  position: relative;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   color: #1d1316;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #f56c57, #ffa85c);
+  margin: 10px auto 0;
+  border-radius: 2px;
 }
 
 .product-grid {
@@ -326,3 +339,12 @@ header {
   background: linear-gradient(135deg, #ffa85c, #f56c57);
   transform: scale(1.05);
 }
+
+.product-section {
+  padding: 60px 20px;
+  background: linear-gradient(180deg, rgba(255, 223, 186, 0.1) 0%, rgba(255, 223, 186, 0.4) 100%);
+  text-align: center;
+}
+
+
+
