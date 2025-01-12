@@ -213,7 +213,7 @@ header {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-  margin-bottom: 20px;
+  margin-bottom: px;
 }
 
 .hero-subtitle {
@@ -222,6 +222,7 @@ header {
   margin-bottom: 30px;
   line-height: 1.6;
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+  font-weight: 100;
 }
 
 .hero::after {
@@ -246,6 +247,7 @@ header {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
 
 }
 
