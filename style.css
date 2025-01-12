@@ -123,11 +123,11 @@ header {
   right: -300px;
   width: 300px;
   height: 500px;
-  background: linear-gradient(135deg, #f56c57, #ffa85c);
+  background: rgba(29, 19, 22, 0.9); 
   z-index: 1000;
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Miękki cień */
   border: 4px solid rgba(255, 255, 255, 0.2);
   transition: right 0.4s ease, transform 0.4s ease;
   transition: scale(0.95);
@@ -153,14 +153,15 @@ header {
   justify-content: start;
   gap: 10px;
   width: 100%;
+  
 }
 
 .side-menu ul li a {
-  color: #fff;
+  color: #f8f1e8;
   text-decoration: none;
   font-size: 1.2em;
   font-weight: 600;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   padding: 5px 20px;
   border-radius: 15px;
   transition: background 0.3s ease, transform 0.3s ease;
@@ -173,7 +174,8 @@ header {
 }
 
 .side-menu ul li a:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3); 
+  color: #ffa85c;
   transform: scale(1.05);
 }
 
@@ -184,7 +186,7 @@ header {
 }
 
 .side-menu ul li a:hover i {
-  color: #fff;
+  color: #f8f1e8;
 }
 
 
@@ -202,6 +204,24 @@ header {
 
 .hero-content {
   z-index: 1;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
 }
 
 .hero::after {
@@ -213,4 +233,24 @@ header {
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   z-index: 0;
+}
+
+.cta-btn {
+  font-family: 'roboto', sans-serif;
+  background: linear-gradient(135deg, #f56c57, #ffa85c);
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.cta-btn:hover {
+  background: linear-gradient(135deg, #ffa85c, #f56c57);
+  transform: scale(1.1);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
 }
