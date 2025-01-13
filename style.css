@@ -415,3 +415,90 @@ header {
 
 
 
+/* Testimonials Section */
+
+.testimonial-section {
+  padding: 60px 20px;
+  background: linear-gradient(180deg, rgba(255, 223, 186, 0.1) 0%, rgba(255, 223, 186, 0.4) 100%);
+  text-align: center;
+}
+
+.testimonial-section .section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #1d1316;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover { 
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  font-style: italic;
+  line-height: 1.6;
+
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #ffa85c;
+}
+
+.author-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: #1d1316;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.author-role {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.testimonial-rating {
+  font-size: 1.2rem;
+  color: #ffa85c;
+}
