@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, .section-title {
+  font-family: 'Playfair Display', sans-serif;
+}
+
 /* Nagłówek */
 header {
   display: flex; 
