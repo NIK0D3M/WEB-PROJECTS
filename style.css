@@ -297,6 +297,15 @@ header {
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 450px;
+  padding-bottom: 15px;
+  width: 100%;
+  height: 100%;
+  
 }
 
 .product:hover {
@@ -307,8 +316,10 @@ header {
 
 .product img {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
   border-bottom: 2px solid #ffa85c;
+  border-radius: 10px;
 }
 
 .product h3 {
@@ -316,6 +327,10 @@ header {
   font-size: 1.5rem;
   margin: 15px 0;
   color: #1d1316;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product p {
@@ -324,6 +339,14 @@ header {
   color: #555;
   padding: 0 10px;
   margin-bottom: 20px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 60px;
+  
 }
 
 .product-btn {
@@ -334,6 +357,7 @@ header {
   border-radius: 10px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: auto;
 }
 
 
@@ -347,6 +371,39 @@ header {
   background: linear-gradient(180deg, rgba(255, 223, 186, 0.1) 0%, rgba(255, 223, 186, 0.4) 100%);
   text-align: center;
 }
+
+.product-description {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.product-description h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  color: #1d131d;
+  margin: 10px 0;
+}
+
+.product-description p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  
+  margin: 0;
+}
+
+
 
 
 
