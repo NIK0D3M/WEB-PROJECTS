@@ -563,3 +563,87 @@ header {
 
 /* Best Sellers */
 
+.best-sellers {
+  padding: 60px 20px;
+  background: linear-gradient(180deg, rgba(255, 223, 186, 0.1), rgba(255, 223, 186, 0.4));
+  text-align: center;
+}
+
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #1d1316;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* kontener na produkty */
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.product {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3 ease;
+  max-width: 350px;
+}
+
+
+.product-hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 5px solid #ffa85c;
+}
+
+.product-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1d1316;
+}
+
+.product-info p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Responsywność */
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .product-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .product-info p {
+    font-size: 0.9rem;
+  }
+}
