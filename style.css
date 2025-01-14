@@ -419,14 +419,16 @@ header {
 
 .testimonial-section {
   padding: 60px 20px;
-  background: linear-gradient(180deg, rgba(255, 223, 186, 0.1) 0%, rgba(255, 223, 186, 0.4) 100%);
+  background: linear-gradient(360deg, rgba(255, 223, 186, 0.1) 0%, rgba(255, 223, 186, 0.4) 100%);
   text-align: center;
 }
 
-.testimonial-section .section-title {
+
+
+.section-title {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   color: #1d1316;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
@@ -440,11 +442,14 @@ header {
 
 .testimonial-card {
     background: white;
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 350px;
+    position: relative;
+    overflow: visible;  
 }
 
 .testimonial-card:hover { 
@@ -452,20 +457,56 @@ header {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+.testimonial-photo-wrapper {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  
+  border: 5px solid #ffa85c;
+  margin-bottom: 15px;
+}
+
+.author-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: #1d1316;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 150px;
+}
+
+.author-role {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
 .testimonial-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 15px;
+  position: relative;
 }
 
 .testimonial-text {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: #555;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-style: italic;
   line-height: 1.6;
+  margin-top: 30px;
+
 
 }
 
@@ -475,30 +516,46 @@ header {
   align-items: center;
 }
 
-.author-photo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
-  border: 2px solid #ffa85c;
-}
 
-.author-name {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
-  color: #1d1316;
-  font-weight: bold;
-  margin: 5px 0;
-}
-
-.author-role {
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.9rem;
-  color: #555;
-}
 
 .testimonial-rating {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #ffa85c;
+}
+
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background: #f9f9f9;
+  border-radius: 50%;
+  z-index: -1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1  );
+}
+
+.photo-frame {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-bottom: -50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  background: #f9f9f9;
+  top: -85px;
+  left: 50%;  
+  transform: translateX(-50%);
+}
+
+.another-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
