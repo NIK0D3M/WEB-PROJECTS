@@ -400,7 +400,7 @@ header {
 .product-description p {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  color: #555;
+  color: #555;  
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -559,3 +559,7 @@ header {
   object-fit: cover;
   border-radius: 50%;
 }
+
+
+/* Best Sellers */
+
